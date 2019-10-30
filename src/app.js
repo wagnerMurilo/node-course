@@ -38,7 +38,47 @@ app.get('/help', (req, res) => {
     res.render('help', {
         name:'leon',
         age:'28',
-        title:'mundial do palmeiras'
+        title:'HEEEELP'
+    })
+})
+
+app.get('/astro', (req, res) => {
+    res.render('astro', {
+        name:'olavo de caraio',
+        age:'28',
+        title:'gerador de astrologias'
+    })
+})
+
+app.get('/deus', (req, res) => {
+    res.render('deus', {
+        name:'coca cola company',
+        age:'28',
+        title:'benca online'
+    })
+})
+
+app.get('/news', (req, res) => {
+    res.render('news', {
+        name:'bot de feliz aniversario automatico',
+        age:'28',
+        title:'opiniao dos especialistas do jornal'
+    })
+})
+
+app.get('/senso', (req, res) => {
+    res.render('senso', {
+        name:'devolva minha fantasia',
+        age:'28',
+        title:'repositorio de moral'
+    })
+})
+
+app.get('/namo', (req, res) => {
+    res.render('namo', {
+        name:'criacionismo, eu sou uma webpage q nao preciso me questionar, pois äe sö fechar os olhos e',
+        age:'28',
+        title:'gerador de namorado'
     })
 })
 
