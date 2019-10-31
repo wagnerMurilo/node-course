@@ -23,7 +23,7 @@ app.get('', (req, res) => {
     res.render('index', {
         name:'wagner',
         age:'28',
-        title:'nd n'
+        title:'posso ir trabalhar pelado hj?'
     })
 })
 app.get('/about', (req, res) => {
@@ -86,13 +86,13 @@ app.get('/weather', (req, res) => {
     geocode(req.query.address, (error, {latitude, longitude, location} = {}) => {
         if(error)
         {
-            return res.send(error)    
+            return res.send({error})    
         } else
         {
             forecast(latitude, longitude, (error, forecastMessage) => {
                 if(error)
                 {
-                    return send(error)
+                    return res.send({error})
                 } else
                 {
                     return res.send({
