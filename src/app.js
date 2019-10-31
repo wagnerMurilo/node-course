@@ -3,6 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const random = require('./utils/random')
 const app = express()
 
 const port = process.env.PORT || 3000
@@ -30,13 +31,13 @@ app.get('/about', (req, res) => {
     res.render('about', {
         name:'wagner',
         age:'28',
-        title:'vendo corsel 87'
+        title:'vendo tipo 93 roda acapulco'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        name:'leon',
+        name:'leon heeeeeeelp',
         age:'28',
         title:'HEEEELP'
     })
@@ -55,14 +56,6 @@ app.get('/deus', (req, res) => {
         name:'coca cola company',
         age:'28',
         title:'benca online'
-    })
-})
-
-app.get('/news', (req, res) => {
-    res.render('news', {
-        name:'bot de feliz aniversario automatico',
-        age:'28',
-        title:'opiniao dos especialistas do jornal'
     })
 })
 
@@ -106,6 +99,29 @@ app.get('/weather', (req, res) => {
         }
     })    
 })
+
+app.get('/news', (req, res) => {
+    res.render('news', {
+        name:'bot de feliz aniversario automatico',
+        age:'28',
+        title:'opiniao dos especialistas do jornal'
+    })
+})
+
+app.get('/news1234', (req, res) => {
+    random(30, (error, sentence) => {
+        if (error)
+        {
+            return res.send({error})
+
+        }else
+        {
+            return res.send({sentence})
+        }
+    })
+    
+})
+
 
 app.get('*', (req, res) => {
     res.render('404', {
