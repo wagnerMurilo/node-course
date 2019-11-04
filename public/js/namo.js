@@ -28,12 +28,12 @@ namo.addEventListener('submit', (e) => {
         {
             namoMsg1.textContent = 'Seu namorado e o Jurandir'    
             namoMsg2.textContent = 'Pau pra toda obra. Otimo pai, construiu uma casa para as filhas com as proprias maos, onde mantem elas trancadas. Ele tambem e pintor, motoboy, medico em medicina e artezao, mas perdeu o ar quando te viu e ficou com tezao.'
-            namoImg.src ='img/namo3.jpg'
+            namoImg.src ='img/namo5.jpg'
         }else if(0.8>randomNamo>0.6)
         {
             namoMsg1.textContent = 'Seu namorado e o Samuel'    
             namoMsg2.textContent = 'Gamer, geek, programador full stack, tem um podcast e e fullrange. Seu super heroi favorito e o Pantera Verde e e fa de star trek(guerra nas estrelas)'
-            namoImg.src ='img/namo4.jpg'
+            namoImg.src ='img/namo6.jpg'
         }
         else
         {
