@@ -121,6 +121,33 @@ app.get('/news1234', (req, res) => {
     })
     
 })
+app.get('/news1', (req, res) => {
+    random(1, (error, sentence) => {
+        if (error)
+        {
+            return res.send({error})
+
+        }else
+        {
+            return res.send({sentence})
+        }
+    })
+    
+})
+
+app.get('/news2', (req, res) => {
+    random(2, (error, sentence) => {
+        if (error)
+        {
+            return res.send({error})
+
+        }else
+        {
+            return res.send({sentence})
+        }
+    })
+    
+})
 
 
 app.get('*', (req, res) => {

@@ -49,3 +49,31 @@ button {
     color: white;
     padding: 8px;
 }
+#newsImage {
+    float:left; 
+    margin-top:10px;
+    width:200px;
+    height: 200px;    
+}
+#newsMessage1 {
+    margin-top:10px;
+    max-width:500px;
+    margin-left:210px;   
+}
+#newsMessage2 { 
+    margin-top:150px;   
+}
+#namoImg {
+    width:300px;
+    height: 400px;    
+}
+#astroImg {
+    width:300px;
+    height: 300px; 
+    margin-bottom: 10px;   
+}
+#relaxImg {
+    width:300px;
+    height: 300px; 
+    margin-bottom: 10px;   
+}
