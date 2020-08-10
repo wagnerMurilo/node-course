@@ -20,6 +20,12 @@ footer {
     flex-grow:1;
 }
 
+.portrait{
+    width:350px;
+    height: 500px;
+    margin-left: 160px;
+}
+
 header {
     margin-top: 16px;
     margin-bottom: 48px;
@@ -76,4 +82,8 @@ button {
     width:300px;
     height: 300px; 
     margin-bottom: 10px;   
+}
+#canva {
+    float:left; 
+    margin-top:10px;
 }

@@ -149,6 +149,13 @@ app.get('/news2', (req, res) => {
     
 })
 
+app.get('/pudol', (req, res) => {
+    res.render('pudol', {
+        name:'wagner',
+        age:'28',
+        title:'desenhe um pudol'
+    })
+})
 
 app.get('*', (req, res) => {
     res.render('404', {
